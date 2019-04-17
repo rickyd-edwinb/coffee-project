@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Coffee!</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div id="coffee-list" class="row">
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+                </div>
+            </div>
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="roast-selection">Roast</label>
+                        <select id="roast-selection" class="btn-block form-control">
+                            <option>all</option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="coffee-filter">Coffee Name</label>
+                        <input type="text" id="coffee-filter" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="submitFilter" type="submit" class="btn btn-primary btn-block form-control"/>
+                    </div>
+                </form>
+                <hr>
+                <h1 class="text-center">Add a Coffee</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="roast-type">Roast</label>
+                        <select id="roast-type" class="btn-block form-control">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="coffee-name">Name</label>
+                        <input type="text" id="coffee-name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="submitAddCoffee" type="submit" class="btn btn-primary btn-block form-control"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
