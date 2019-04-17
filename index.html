@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Heading -->
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -17,12 +17,14 @@
                 <hr>
             </div>
         </div>
+        <!-- Row for list of coffees -->
         <div class="row">
             <div class="col-6">
                 <div id="coffee-list" class="row">
 
                 </div>
             </div>
+            <!-- Form for roast type -->
             <div class="col-6">
                 <form>
                     <div class="form-group">
@@ -34,17 +36,21 @@
                             <option>dark</option>
                         </select>
                     </div>
+                    <!-- Form for name of coffee -->
                     <div class="form-group">
                         <label for="coffee-filter">Coffee Name</label>
                         <input type="text" id="coffee-filter" class="form-control">
                     </div>
+                    <!-- Submit button -->
                     <div class="form-group">
                         <input id="submitFilter" type="submit" class="btn btn-primary btn-block form-control"/>
                     </div>
                 </form>
+                <!-- Heading for add coffee form -->
                 <hr>
                 <h1 class="text-center">Add a Coffee</h1>
                 <form>
+                    <!-- Form for roast type of added coffee -->
                     <div class="form-group">
                         <label for="roast-type">Roast</label>
                         <select id="roast-type" class="btn-block form-control">
@@ -53,10 +59,12 @@
                             <option>dark</option>
                         </select>
                     </div>
+                    <!-- Form for added coffee name -->
                     <div class="form-group">
                         <label for="coffee-name">Name</label>
                         <input type="text" id="coffee-name" class="form-control">
                     </div>
+                    <!-- Submit button for added coffee -->
                     <div class="form-group">
                         <input id="submitAddCoffee" type="submit" class="btn btn-primary btn-block form-control"/>
                     </div>
@@ -64,8 +72,8 @@
             </div>
         </div>
     </div>
-
     <script src="main.js"></script>
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
