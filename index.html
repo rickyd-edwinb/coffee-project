@@ -10,16 +10,16 @@
 </head>
 <body>
     <!-- Heading -->
-    <div class="container">
+    <div class="container col-8">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>Coffee!</h1>
-                <hr>
+                <hr class="my-2">
             </div>
         </div>
         <!-- Row for list of coffees -->
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 my-4">
                 <div id="coffee-list" class="row">
 
                 </div>
@@ -27,8 +27,8 @@
             <!-- Form for roast type -->
             <div class="col-6">
                 <form>
-                    <div class="form-group">
-                        <label for="roast-selection">Roast</label>
+                    <div class="form-group my-2">
+                        <label for="roast-selection" class="my-0">Roast</label>
                         <select id="roast-selection" class="btn-block form-control">
                             <option>all</option>
                             <option>light</option>
@@ -38,12 +38,12 @@
                     </div>
                     <!-- Form for name of coffee -->
                     <div class="form-group">
-                        <label for="coffee-filter">Coffee Name</label>
+                        <label for="coffee-filter" class="my-0">Coffee Name</label>
                         <input type="text" id="coffee-filter" class="form-control">
                     </div>
                     <!-- Submit button -->
                     <div class="form-group">
-                        <input id="submitFilter" type="submit" class="btn btn-primary btn-block form-control"/>
+                        <input id="submitFilter" type="submit" class="btn btn-primary btn-block form-control" value="Search"/>
                     </div>
                 </form>
                 <!-- Heading for add coffee form -->
@@ -52,7 +52,7 @@
                 <form>
                     <!-- Form for roast type of added coffee -->
                     <div class="form-group">
-                        <label for="roast-type">Roast</label>
+                        <label for="roast-type" class="my-0">Roast</label>
                         <select id="roast-type" class="btn-block form-control">
                             <option>light</option>
                             <option>medium</option>
@@ -61,12 +61,12 @@
                     </div>
                     <!-- Form for added coffee name -->
                     <div class="form-group">
-                        <label for="coffee-name">Name</label>
+                        <label for="coffee-name" class="my-0">Name</label>
                         <input type="text" id="coffee-name" class="form-control">
                     </div>
                     <!-- Submit button for added coffee -->
                     <div class="form-group">
-                        <input id="submitAddCoffee" type="submit" class="btn btn-primary btn-block form-control"/>
+                        <input id="submitAddCoffee" type="submit" class="btn btn-primary btn-block form-control" value="Add!"/>
                     </div>
                 </form>
             </div>
